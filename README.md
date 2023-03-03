@@ -49,3 +49,9 @@ Total: 304 ETH
 * Be written as production-ready code. You will write production code.
 * Be easy to grow and easy to add new functionality.
 * Have notes attached, explaining the solution and why certain things are included and others are left out.
+
+#### To run the code
+npm start
+
+#### To run test
+npm test
