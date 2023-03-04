@@ -75,6 +75,7 @@ export class Launcher {
   }
 
   public processData(inputs: any) {
+    if (inputs.length === 0) return 0;
     const groupByCategory: { [key: string]: number } = inputs.reduce(
       (group: any, product: any) => {
         group[product] = (Number(group[product]) || 0) + 1;
@@ -114,10 +115,11 @@ export class Launcher {
   }
 }
 
-// const inputs = ["APE", "PUNK", "MEEBIT"];
-// const inputs = ["APE", "PUNK", "APE"];
-// const inputs = ["PUNK", "PUNK", "PUNK", "APE", "PUNK"];
-const inputs = ["APE", "PUNK", "APE", "APE", "MEEBIT", "PUNK", "PUNK"];
+const inputs: string[] = ["APE", "PUNK", "MEEBIT"];
+// const inputs: string[] = ["APE", "PUNK", "APE"];
+// const inputs: string[] = ["PUNK", "PUNK", "PUNK", "APE", "PUNK"];
+// const inputs: string[] = ["APE", "PUNK", "APE", "APE", "MEEBIT", "PUNK", "PUNK"];
+// const inputs: string[] = [];
 
 const app = new Launcher();
 app.seedApp();
