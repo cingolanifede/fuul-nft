@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "test": "jest"
+    "dev": "ts-node src/index.ts",
+    "start": "ts-node dist/index.js",
+    "test": "jest",
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "tsc --build --clean"
   },
   "devDependencies": {
     "@types/jest": "^29.4.0",

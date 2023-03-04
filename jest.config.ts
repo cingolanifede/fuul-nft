@@ -3,7 +3,7 @@ import type { Config } from "@jest/types";
 
 // Sync object
 const config: Config.InitialOptions = {
-  roots: ["<rootDir>/test"],
+  roots: ["<rootDir>/src/test"],
   transform: {
     "^.+\\.tsx?$": "ts-jest",
   },

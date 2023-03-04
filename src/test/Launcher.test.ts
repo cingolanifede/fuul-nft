@@ -1,10 +1,10 @@
-import { Launcher } from "../src";
-import { DiscountRules } from "../src/DiscountRules/discount";
-import { Products } from "../src/Products/product";
+import { Launcher } from "..";
+import { DiscountRules } from "../DiscountRules/discount";
+import { Products } from "../Products/product";
 
 //Mock the the internal classes
-jest.mock("../src/Products/product");
-jest.mock("../src/DiscountRules/discount");
+jest.mock("../Products/product");
+jest.mock("../DiscountRules/discount");
 
 let app: Launcher;
 

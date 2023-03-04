@@ -124,3 +124,4 @@ const inputs: string[] = ["APE", "PUNK", "MEEBIT"];
 const app = new Launcher();
 app.seedApp();
 console.log("Total:", app.processData(inputs));
+// console.log("arguments: " + process.argv.slice(2));
