@@ -43,11 +43,14 @@ Items: APE, PUNK, APE, APE, MEEBIT, PUNK, PUNK
 Total: 304 ETH
 ```
 
-#### The code should:
+#### The code have:
 
-- Be written as production-ready code. You will write production code.
-- Be easy to grow and easy to add new functionality.
-- Have notes attached, explaining the solution and why certain things are included and others are left out.
+- Discount Rules can be added to allow more complex and scalable posibilities. You can define paramenter depending the code, discountPrice, etc.
+- Product can be added to allow more complex and scalable posibilities. You can whatever product you can and associate it to a discount rule.
+
+#### Disclaimer:
+- The above is hardcoded, so to add new ones you will need to do it by and, pushing a new item in the arrays. TODO: create an interface to do it
+- Inputs too. For testing and developing pourposes was did this way. TODO: create a better way, perhaps an api.
 
 ```
 ## To install all dependencies
