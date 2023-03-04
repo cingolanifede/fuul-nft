@@ -11,7 +11,6 @@ export class Launcher {
     this.rules = new DiscountRules();
   }
   public seedApp() {
-    // this.server.startServer();
     //We create the products and the discount rules
     const products = [
       { code: "APE", name: "Bored Apes", price: 75, unit: "ETH" },
